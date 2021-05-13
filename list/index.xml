@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lists on Operators &amp; Cycles in Java, Python, Bash</title>
+    
+    
+    
+    <link>http://example.org/list/</link>
+    <description>Recent content in Lists on Operators &amp; Cycles in Java, Python, Bash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    
+	<atom:link href="http://example.org/list/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning operators &amp; cycles in Java, Python,  Bash</title>
+      <link>http://example.org/list/my-first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/list/my-first-post/</guid>
+      <description>
+        
+          &lt;img src=&#34;https://media.proglib.io/wp-uploads/2018/03/%D1%8B%D0%B0%D1%8B%D0%B2%D0%B0.png&#34;/&gt;
+          
+        
+        
+        
+          The site contains the syntax of some control structures &amp; cycles in Java, Python and Bash
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>

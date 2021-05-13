@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operators &amp; Cycles in Java, Python, Bash</title>
+    
+    
+    
+    <link>http://example.org/</link>
+    <description>Recent content on Operators &amp; Cycles in Java, Python, Bash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bash</title>
+      <link>http://example.org/bash_inf/bash_inf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/bash_inf/bash_inf/</guid>
+      <description>
+        
+          &lt;img src=&#34;https://hsto.org/webt/hv/j_/81/hvj_81nnk7sst8bq3eclmlzkfec.png&#34;/&gt;
+          
+        
+        
+        
+            IF
+if [[ condition ]]; then commands
+fi
+  IF-THEN-ELSE if [[ condition ]]; then
+commands 1
+else
+commands 2
+fi
+  FOR
+for var in list
+do
+commands done
+  WHILE
+while [ condition ]
+do
+commands done
+  CASE
+case &amp;ldquo;$variable&amp;rdquo; in
+&amp;ldquo;$condition1&amp;rdquo; ) command&amp;hellip; ;;
+&amp;ldquo;$condition2&amp;rdquo; ) command&amp;hellip; ;;
+esac
+  
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>http://example.org/java_inf/java_inf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/java_inf/java_inf/</guid>
+      <description>
+        
+          &lt;img src=&#34;https://hsto.org/webt/0e/rn/j0/0ernj0wwnqnwdejls6zvzjup5k8.png&#34;/&gt;
+          
+        
+        
+        
+            IF
+if (condition)
+{
+commands
+}
+  IF-ELSE IF-ELSE if (condition)
+{
+commands
+}
+else if
+{
+commands
+} else {
+commands
+}
+  FOR
+for (initialization; condition; iteration) {
+commands
+}
+  WHILE
+while (condition)
+{ commands }
+  SWITCH
+switch (variable) {
+case constant1:
+commands
+break;
+case constant2:
+commands
+break;
+case constant3:
+commands
+break;
+default:
+commands
+}
+  
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Learning operators &amp; cycles in Java, Python,  Bash</title>
+      <link>http://example.org/list/my-first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/list/my-first-post/</guid>
+      <description>
+        
+          &lt;img src=&#34;https://media.proglib.io/wp-uploads/2018/03/%D1%8B%D0%B0%D1%8B%D0%B2%D0%B0.png&#34;/&gt;
+          
+        
+        
+        
+          The site contains the syntax of some control structures &amp; cycles in Java, Python and Bash
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://example.org/python_inf/python_inf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/python_inf/python_inf/</guid>
+      <description>
+        
+          &lt;img src=&#34;https://mobile-review.com/articles/2020/image/skillfactory-python/3.jpg&#34;/&gt;
+          
+        
+        
+        
+            IF
+if (condition):
+commands
+  IF-ELIF-ELSE if (condition):
+commands
+elif (condition):
+commands
+else:
+commands
+  FOR
+for &amp;lt;variable&amp;gt; in &amp;lt;iterable&amp;gt;:
+commands
+  WHILE
+while (condition):
+commands
+  SWITCH
+No operator. Use if&amp;hellip;elif&amp;hellip;
+  
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>
