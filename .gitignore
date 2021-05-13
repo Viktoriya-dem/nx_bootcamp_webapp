@@ -1,32 +1,11 @@
-# Prerequisites
-*.d
+/public/
+/resources/_gen/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+hugo.exe
+hugo.linux
+hugo.darwin
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+.DS_Store
+node_modules
+dist
+tmp
