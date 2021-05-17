@@ -1,0 +1,39 @@
+baseURL = "http://example.org/"
+languageCode = "ru-ru"
+title = "Operators & Cycles in Java, Python, Bash"
+theme = "hugo-theme-hello-friend"
+
+[params]
+  contentTypeName = "list"
+
+  defaultTheme = "dark"
+
+  showMenuItems = 3
+
+  showReadingTime = false
+
+[languages]
+  [languages.en]
+    title = "Operators & Cycles in Java, Python, Bash"
+    subtitle = "The site contains the syntax of some control structures & Cycles in Java, Python and Bash operator"
+        
+ [languages.en.params.logo]
+      logoText = "Hi, programmer"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "java_inf"
+        name = "Java content"
+        url = "/java_inf"
+      [[languages.en.menu.main]]
+        identifier = "python_inf"
+        name = "Python content"
+        url = "/python_inf"
+	[[languages.en.menu.main]]
+        identifier = "bash_inf"
+        name = "Bash content"
+        url = "/bash_inf"
+
+
+
