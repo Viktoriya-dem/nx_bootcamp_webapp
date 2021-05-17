@@ -18,7 +18,7 @@ WORKDIR /usr/share/nginx/html
 
 COPY . /usr/share/nginx/html
 
-COPY --from =generator /$HOME/hugo /usr/share/nginx/html
+COPY --from=generator /$HOME/hugo /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]
 
