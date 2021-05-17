@@ -15,17 +15,18 @@ COPY ./ /site
 
 WORKDIR /site
 
-RUN hugo
+ENTRYPOINT ["hugo", "server"]
+
+ENTRYPOINT ["hugo", "-d"]
+
 
 FROM nginx:alpine
 
-COPY --from=build /site/public /usr/share/nginx/html
+COPY --from=build /site /usr/share/nginx/html
 
 WORKDIR /usr/share/nginx/html
 
 
-
-#CMD ["nginx", "-g", "daemon off;"]
-
+CMD ["nginx", "-g", "daemon off;"]
 
 
