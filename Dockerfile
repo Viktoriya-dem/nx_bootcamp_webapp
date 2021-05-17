@@ -8,7 +8,7 @@ RUN wget -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.83.1/
     apt install ./hugo.deb && \
     rm hugo.deb
 
-
+RUN hugo
 
 FROM nginx:alpine
 
