@@ -1,3 +1,15 @@
+FROM ubuntu:18.04 as generator
+
+RUN mkdir -p /$HOME/hugo
+
+WORKDIR /$HOME/hugo
+
+RUN wget -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_extended_0.83.1_Linux-64bit.deb && \
+    apt install ./hugo.deb && \
+    rm hugo.deb
+
+
+
 FROM nginx:alpine
 
 RUN mkdir -p /usr/share/nginx/html
@@ -6,8 +18,9 @@ WORKDIR /usr/share/nginx/html
 
 COPY . /usr/share/nginx/html
 
-<<<<<<< HEAD
-CMD ["nginx", "-g", "daemon off;"]
-=======
+COPY --from =generator /$HOME/hugo /usr/share/nginx/html
 
->>>>>>> 93b655291b36263a21f7980a94460f61604eb946
+CMD ["nginx", "-g", "daemon off;"]
+
+
+
