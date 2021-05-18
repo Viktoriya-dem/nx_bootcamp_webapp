@@ -1,6 +1,12 @@
 FROM ubuntu:18.04 AS build
 
+WORKDIR /www
+
 RUN apt-get update && apt-get install -y wget
+
+COPY config.toml /www/config.toml
+
+COPY . /www
 
 ENV HUGO_VERSION="0.83.1"
 
@@ -9,19 +15,14 @@ RUN wget --quiet "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VER
     rm -r hugo_${HUGO_VERSION}_Linux-64bit.tar.gz && \
     mv hugo /usr/bin
 
-COPY . .
-
 RUN hugo
 
-FROM nginx:alpine
+FROM nginx
 
-COPY --from=build ./public /usr/share/nginx/html
+RUN mkdir -p /www/site
 
-RUN mkdir -p /etc/nginx
+WORKDIR /www/site
 
-COPY default.conf /etc/nginx/default.conf
+COPY --from=build /www/public /www/site
 
-WORKDIR /usr/share/nginx/html
-
-
-CMD ["nginx", "-g", "daemon off;"]
+COPY default.conf /etc/nginx/conf.d/default.conf
