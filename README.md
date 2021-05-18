@@ -1,5 +1,8 @@
 # nx_bootcamp_webapp
-Website about Bash, Java, Python
+Генератор статических сайтов на HUGO
 
-- Пока не работает
-- Но я не сдаюсь!)
+Для работы нужно:
+- Скачать данные репозитория
+- выполнить команду docker build -t nx_bootcamp_webapp .
+- выполнить команду docker run -d -p 8080:80 nx_bootcamp_webapp
+- для просмотра сайта открыть в браузере localhost:8080
