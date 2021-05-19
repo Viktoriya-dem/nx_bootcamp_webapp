@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "ru-ru"
 title = "Operators & Cycles in Java, Python, Bash"
 theme = "hugo-theme-hello-friend"
