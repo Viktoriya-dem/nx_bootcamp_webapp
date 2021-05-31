@@ -5,9 +5,6 @@ pipeline {
             steps {
                sh '''
                 docker stop webapp
-                rm -rf nx_bootcamp_webapp
-                git clone https://github.com/Viktoriya-dem/nx_bootcamp_webapp
-                cd nx_bootcamp_webapp
                 docker build -t nx_bootcamp_webapp .
                 docker run --rm -d -p 80:80 --name webapp nx_bootcamp_webapp
                '''
