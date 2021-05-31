@@ -1,4 +1,4 @@
-FROM ubuntu:18.04 AS build
+FROM lubuntu AS build
 
 WORKDIR /www
 
