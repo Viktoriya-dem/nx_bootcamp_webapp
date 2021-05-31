@@ -1,4 +1,4 @@
-FROM lubuntu AS build
+FROM alpine AS build
 
 WORKDIR /www
 
