@@ -6,18 +6,24 @@ pipeline {
                sh '''
                 docker stop webapp
                 docker build -t nx_bootcamp_webapp .
+               '''
+            }
+        }
+	stage('2 Start') {
+            steps {
+               sh '''
                 docker run --rm -d -p 80:80 --name webapp nx_bootcamp_webapp
                '''
             }
         }
-        stage('2 Test') {
+        stage('3 Test') {
             steps {
                 sh 'docker inspect webapp | grep "Running"'
             }
 		}
-        stage('3 Deploy') {
+        stage('4 Email Notification') {
             steps {
-                sh 'echo "Webapp is working"'
+                mail bcc: '', body: 'Job is working', cc: '', from: '', replyTo: '', subject: 'Jenkins job Webapp(home3)_addition', to: 'viktoriya-dem1dova@yandex.ru'
             }
 		}
 	}
