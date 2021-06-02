@@ -23,7 +23,7 @@ pipeline {
 		}
         stage('4 Email Notification') {
             steps {
-                mail bcc: '', body: 'Job is working', cc: '', from: '', replyTo: '', subject: 'Jenkins job Webapp(home3)_addition', to: 'viktoriya-dem1dova@yandex.ru'
+                mail bcc: '', body: 'Job is working', cc: '', from: 'viktoriya-dem1dova@yandex.ru', replyTo: '', subject: 'Jenkins job Webapp(home3)_addition', to: 'viktoriya-dem1dova@yandex.ru'
             }
 		}
 	}
