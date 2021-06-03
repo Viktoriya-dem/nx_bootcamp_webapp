@@ -4,7 +4,7 @@ pipeline {
         stage('1 Build') {
             steps {
                sh '''
-                docker stop webapp
+		docker kill $(docker ps -q)
                 docker build -t nx_bootcamp_webapp .
                '''
             }
